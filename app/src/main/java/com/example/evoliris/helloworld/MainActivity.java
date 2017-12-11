@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MenuActivity.class);
 
         TextView tVLogin = (TextView) findViewById(R.id.input_login);
-       // Toast.makeText(this, tVLogin.getText(), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, tVLogin.getText(), Toast.LENGTH_LONG).show();
         intent.putExtra("login", tVLogin.getText().toString());
         startActivity(intent);
 

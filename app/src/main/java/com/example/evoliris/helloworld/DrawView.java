@@ -40,7 +40,6 @@ public class DrawView extends View {
 
     public DrawView(Context context, AttributeSet attrs) {
         super(context, attrs);
-
         paint.setAntiAlias(true);
         paint.setColor(Color.BLACK);
         paint.setStyle(Paint.Style.STROKE);
@@ -48,13 +47,26 @@ public class DrawView extends View {
         paint.setStrokeWidth(STROKE_WIDTH);
     }
 
-
     /**
      * Erases the drawing.
      */
     public void clear() {
-        path.reset();
+        paths.clear();
+        paints.clear();
+        bitmap = Bitmap.createBitmap(this.getWidth(), this.getHeight(), Bitmap.Config.ARGB_8888);
+        storedCanvas = new Canvas(bitmap);
+        // Repaints the entire view.
+        invalidate();
+    }
 
+    public void back() {
+        if(paths.size()>0){
+            paths.remove(paths.size()-1);
+            paints.remove(paints.size()-1);
+            bitmap = Bitmap.createBitmap(this.getWidth(), this.getHeight(), Bitmap.Config.ARGB_8888);
+            storedCanvas = new Canvas(bitmap);
+            updateStoredCanvas();
+        }
         // Repaints the entire view.
         invalidate();
     }
@@ -71,7 +83,6 @@ public class DrawView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         if (bitmap == null) {
-
             bitmap = Bitmap.createBitmap(this.getWidth(), this.getHeight(), Bitmap.Config.ARGB_8888);
             storedCanvas = new Canvas(bitmap);
         }
@@ -79,10 +90,12 @@ public class DrawView extends View {
         canvas.drawPath(path, paint);
     }
 
+    Bitmap getBitmap() {
+        return Bitmap.createBitmap(bitmap);
+    }
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
-
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
 
@@ -97,7 +110,9 @@ public class DrawView extends View {
                 //Saves path to history
                 paths.add(new Path(path));
                 paints.add(new Paint(paint));
-                updateStoredCanvas();
+                storedCanvas.drawPath(path,paint);
+                path.reset();
+
                 return true;
 
             default:
@@ -180,10 +195,9 @@ public class DrawView extends View {
         newPaint.setColor(color);
         paint = newPaint;
         path.reset();
-
     }
 
-    public void changeStrokeWidth(int width) {
+    public void changeStrokeWidth(float width) {
         Paint newPaint = new Paint(paint);
         STROKE_WIDTH = width;
         HALF_STROKE_WIDTH = STROKE_WIDTH / 2;

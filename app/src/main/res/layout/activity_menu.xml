@@ -17,27 +17,27 @@
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571"
-        app:layout_constraintHorizontal_bias="0.454">
+        app:layout_constraintVertical_bias="0.571">
 
         <TextView
             android:id="@+id/tV_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:text="Menu"
+            android:text="@string/menu"
             android:textSize="42sp" />
 
-            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:layout_below="@id/tV_login"/>
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tV_login"
+            android:layout_gravity="center"
+            android:orientation="vertical" />
 
 
     </RelativeLayout>

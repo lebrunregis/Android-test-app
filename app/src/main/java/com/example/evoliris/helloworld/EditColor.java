@@ -78,9 +78,6 @@ public class EditColor extends AppCompatActivity {
        /// id.setBackgroundColor(color);
     }
     protected void result(View v){
-
-
-
         finish();
     }
 

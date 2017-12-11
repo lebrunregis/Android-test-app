@@ -1,14 +1,10 @@
 package com.example.evoliris.helloworld;
 
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
 
 public class TextEditorActivity extends AppCompatActivity {
 
