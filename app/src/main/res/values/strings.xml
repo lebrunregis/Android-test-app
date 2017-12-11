@@ -1,0 +1,28 @@
+<resources>
+    <string name="tag_color">tag_color</string>
+    <string name="app_name">Test App</string>
+    <string name="login">Login</string>
+    <string name="ok">Ok</string>
+    <string name="mp">Mot de passe</string>
+    <string name="success">Login!</string>
+    <string name="reset">Reset</string>
+    <string name="retour">Retour</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_1">Activite 1</string>
+    <string name="title_activity_2">Activite 2</string>
+    <string name="title_activity_3">Activite 3</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus aliquet velit at tempor. Vivamus consectetur varius nunc, a sodales velit tempor vel. Aliquam vitae ipsum eu mauris ornare fringilla. Pellentesque posuere nisl vitae urna placerat maximus. Curabitur porttitor sed nisi non fermentum. Nullam pharetra justo non neque tristique, sit amet dignissim augue commodo. Ut consequat diam nec sem placerat, at ornare enim fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Ut tincidunt tristique enim. Donec ut turpis sollicitudin ex dignissim imperdiet eget tempor leo. Ut sit amet sollicitudin mauris. Vivamus pharetra, enim sit amet ultricies congue, turpis tellus lobortis metus, at porttitor ex tortor vitae enim. Phasellus mattis mollis mauris ac elementum. Nam suscipit rhoncus feugiat. Etiam maximus justo nec enim sagittis, vel suscipit est porta. Suspendisse porta, felis sed pulvinar placerat, leo justo aliquet enim, vitae ultricies nulla augue at felis.
+
+Proin posuere vitae nibh sed dignissim. Nulla auctor, nunc eu vulputate tincidunt, sapien ex egestas enim, vel iaculis dolor mauris eget erat. Aenean vel nulla ac nisi varius dapibus. Duis ac enim lacus. Suspendisse potenti. Integer laoreet commodo diam, ac mollis erat rhoncus sed. Donec sit amet odio vitae dolor ultrices mollis et quis erat. Quisque id velit scelerisque, gravida urna eu, suscipit purus. Nulla pharetra cursus suscipit. Maecenas ac ligula interdum, placerat odio vel, hendrerit erat. In venenatis, erat a varius rutrum, est augue consequat neque, nec placerat nisi nunc sed ex. Phasellus ac lorem fermentum, sagittis lacus sed, sollicitudin arcu. Pellentesque finibus felis id risus imperdiet gravida. Vivamus eget nunc nulla.
+
+Sed et ligula tempus, ultrices mi vitae, rutrum lacus. Aenean id leo turpis. Suspendisse pretium pellentesque magna. Nulla id dui eu eros lobortis elementum. Curabitur turpis nulla, sagittis at nulla molestie, porttitor iaculis ligula. Nam vestibulum accumsan pulvinar. Curabitur eu ligula magna. Nam ac est commodo nisl interdum mollis.
+
+Vestibulum maximus at lacus at sollicitudin. Etiam tortor dolor, maximus sed malesuada vel, commodo quis augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque nibh orci, efficitur vel justo sit amet, egestas gravida nulla. Etiam feugiat sodales lacus, id vulputate erat feugiat sit amet. Curabitur at eros sapien. Nunc luctus molestie dignissim.
+
+Ut in metus eget lectus porta viverra. Ut ut ullamcorper purus, et vulputate nunc. Morbi dui dui, convallis et egestas vitae, consectetur at massa. Donec eu nisi suscipit, euismod est at, suscipit mi. Nullam eu lacus ut tortor tristique posuere non sit amet lectus. Proin sed augue nibh. Quisque fermentum, arcu sed molestie bibendum, tellus ligula bibendum massa, vitae pulvinar dui urna ut turpis. Integer dolor elit, molestie eget tellus ut, varius vulputate lacus. Maecenas in condimentum est. Cras mollis et quam fermentum dictum. Praesent ac rutrum magna. Fusce convallis nibh ut nulla mollis, nec ullamcorper libero elementum. Maecenas auctor fermentum nulla, ac scelerisque tellus commodo vel. Nunc finibus diam nec purus ultrices egestas.
+
+In hac habitasse platea dictumst. Morbi porta mauris laoreet, vehicula leo sit amet, aliquam diam. Cras interdum consectetur risus vel sagittis. Maecenas congue dignissim sapien, quis sollicitudin lacus lacinia a. Quisque magna tortor, fermentum ut justo ut, vulputate scelerisque lectus. Aenean id hendrerit urna. Maecenas non porttitor mauris. Quisque elementum lobortis nunc in porttitor. Proin ac nunc porttitor, hendrerit lacus vitae, scelerisque magna. Suspendisse egestas tellus ante, a finibus nisl eleifend sed. Morbi ut ante ac nulla faucibus pharetra sit amet nec lorem. Aliquam eu enim nunc. Sed luctus tortor tellus, ut tempus orci venenatis in. Maecenas at sagittis ipsum. Nullam blandit vestibulum metus, quis lobortis nunc faucibus nec. Sed dui risus, lobortis dictum nisl id, lobortis tincidunt metus.</string>
+</resources>

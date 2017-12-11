@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.evoliris.helloworld.EditColor">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <SeekBar
+            android:id="@+id/seekBarGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255"
+            android:theme="@style/GreenSeekBarTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <SeekBar
+            android:id="@+id/seekBarBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255"
+            android:theme="@style/BlueSeekBarTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <SeekBar
+            android:id="@+id/seekBarRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255"
+            android:theme="@style/RedSeekBarTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <GridLayout
+            android:id="@+id/colorChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="5"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/color_0"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#000" />
+
+            <Button
+                android:id="@+id/color_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#ffffff" />
+
+            <Button
+                android:id="@+id/color_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000" />
+
+            <Button
+                android:id="@+id/color_3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#0000ff" />
+
+            <Button
+                android:id="@+id/color_4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00ff00" />
+
+            <Button
+                android:id="@+id/color_5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#ffff00" />
+
+            <Button
+                android:id="@+id/color_6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#fcddd1" />
+
+            <Button
+                android:id="@+id/color_7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff6f00" />
+
+            <Button
+                android:id="@+id/color_8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#000" />
+
+            <Button
+                android:id="@+id/color_9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#000" />
+        </GridLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smooth" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ok_edit_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok" />
+
+            <Button
+                android:id="@+id/retour_edit_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retour" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

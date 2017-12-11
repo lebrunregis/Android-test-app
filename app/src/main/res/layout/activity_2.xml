@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activite2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    >
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/GreenSeekBarTheme"
+        android:max="255"
+        android:progress="255"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarGreen"
+        android:theme="@style/BlueSeekBarTheme"
+        android:max="255"
+        android:progress="255"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarBlue"
+        android:theme="@style/RedSeekBarTheme"
+        android:max="255"
+        android:progress="255"
+        />
+    <Button
+        android:id="@+id/ok2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seekBarRed">
+    </Button>
+    <Button
+        android:id="@+id/retour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retour"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ok2">
+
+    </Button>
+
+
+</RelativeLayout>
